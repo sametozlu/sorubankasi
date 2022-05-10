@@ -1,0 +1,12 @@
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\bin\Debug\sorubankasi.exe.config
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\bin\Debug\sorubankasi.exe
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\bin\Debug\sorubankasi.pdb
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.csproj.AssemblyReference.cache
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.csproj.SuggestedBindingRedirects.cache
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.Form1.resources
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.FormKayit.resources
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.Properties.Resources.resources
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.csproj.GenerateResource.cache
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.csproj.CoreCompileInputs.cache
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.exe
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.pdb
