@@ -36,6 +36,7 @@
             this.txtname = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.btnback = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnkayit
@@ -106,11 +107,23 @@
             this.btnback.Text = "Geri";
             this.btnback.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Öğretmen",
+            "Öğrenci"});
+            this.comboBox1.Location = new System.Drawing.Point(117, 174);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 8;
+            // 
             // FormKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 318);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtname);
@@ -137,5 +150,6 @@
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.Button btnback;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

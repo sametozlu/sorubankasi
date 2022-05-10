@@ -98,6 +98,7 @@
             this.btnKayit.TabIndex = 15;
             this.btnKayit.Text = "Kayıt Ol";
             this.btnKayit.UseVisualStyleBackColor = true;
+            this.btnKayit.Click += new System.EventHandler(this.btnKayit_Click);
             // 
             // Form1
             // 

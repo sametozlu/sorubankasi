@@ -31,5 +31,13 @@ namespace sorubankasi
         {
 
         }
+
+        private void btnKayit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormKayit sistema = new FormKayit(false);
+            sistema.ShowDialog();
+            this.Close();
+        }
     }
 }
