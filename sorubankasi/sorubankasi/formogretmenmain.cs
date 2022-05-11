@@ -16,5 +16,25 @@ namespace sorubankasi
         {
             InitializeComponent();
         }
+
+        private void formogretmenmain_Load(object sender, EventArgs e)
+        {
+            timer1.Interval = 100;
+            timer1.Start();
+            lblclock.Text= DateTime.Now.ToString();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblclock.Text = DateTime.Now.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formsoruekleme sistema = new formsoruekleme(false);
+            sistema.ShowDialog();
+            this.Close();
+        }
     }
 }

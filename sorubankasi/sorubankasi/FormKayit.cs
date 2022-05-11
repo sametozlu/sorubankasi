@@ -30,7 +30,8 @@ namespace sorubankasi
 
         private void FormKayit_Load(object sender, EventArgs e)
         {
-            comboBox1.Visible = !isfromadmin;
+            comboBox1.Visible = isfromadmin;
+                
             comboBox1.SelectedIndex = 0;
 
         }
@@ -40,7 +41,7 @@ namespace sorubankasi
             int selectedusertype = 3;
             if (isfromadmin)
             {
-                selectedusertype = comboBox1.SelectedIndex + 1;
+                selectedusertype = comboBox1.SelectedIndex + 2;
             }
 
             con = new SqlConnection(SQLConnect.ConnectionString);
@@ -72,7 +73,7 @@ namespace sorubankasi
             }
             else
             {
-                MessageBox.Show("Kullanıcı adını uygun degil.");
+                MessageBox.Show("Kullanıcı adınız uygun degil.");
             }
 
             con.Close();
@@ -82,7 +83,27 @@ namespace sorubankasi
 
         }
 
+        private void btnback_Click(object sender, EventArgs e)
+        {
+            this.Hide();
 
+            if (isfromadmin)
+            {
+                formadminmain sistema = new formadminmain();
+                sistema.ShowDialog();
+                this.Close();
+
+            }
+            else
+            {
+                Form1 sistema = new Form1();
+                sistema.ShowDialog();
+                this.Close();
+
+
+            }
+        
+        }
     } 
 }
 

@@ -34,7 +34,23 @@ namespace sorubankasi
 
         private void btngeri_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
+            if (isfromadmin)
+            {
+                formadminmain sistema = new formadminmain();
+                sistema.ShowDialog();
+                this.Close();
+
+            }
+            else
+            {
+                formogretmenmain sistema = new formogretmenmain();
+                sistema.ShowDialog();
+                this.Close();
+
+
+            }
         }
 
         private void btnsoruekle_Click(object sender, EventArgs e)

@@ -88,8 +88,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formadminmain.resx">
+      <DependentUpon>formadminmain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormKayit.resx">
       <DependentUpon>FormKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formogretmenmain.resx">
+      <DependentUpon>formogretmenmain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsoruekleme.resx">
       <DependentUpon>formsoruekleme.cs</DependentUpon>

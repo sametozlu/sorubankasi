@@ -12,7 +12,7 @@ namespace sorubankasi
 {
     public partial class formogrencimain : Form
     {
-        public formogrencimain()
+        public formogrencimain(int ogrenciid)
         {
             InitializeComponent();
         }

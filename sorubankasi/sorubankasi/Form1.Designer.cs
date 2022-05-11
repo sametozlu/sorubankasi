@@ -80,12 +80,13 @@
             this.btnGiris.TabIndex = 7;
             this.btnGiris.Text = "Giriş";
             this.btnGiris.UseVisualStyleBackColor = true;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // btnforgot
             // 
             this.btnforgot.Location = new System.Drawing.Point(119, 284);
             this.btnforgot.Name = "btnforgot";
-            this.btnforgot.Size = new System.Drawing.Size(139, 23);
+            this.btnforgot.Size = new System.Drawing.Size(139, 33);
             this.btnforgot.TabIndex = 14;
             this.btnforgot.Text = "Şifremi Unuttum";
             this.btnforgot.UseVisualStyleBackColor = true;
@@ -96,7 +97,7 @@
             this.btnKayit.Name = "btnKayit";
             this.btnKayit.Size = new System.Drawing.Size(139, 31);
             this.btnKayit.TabIndex = 15;
-            this.btnKayit.Text = "Kayıt Ol";
+            this.btnKayit.Text = "Öğrenci Kayıt Ol";
             this.btnKayit.UseVisualStyleBackColor = true;
             this.btnKayit.Click += new System.EventHandler(this.btnKayit_Click);
             // 
