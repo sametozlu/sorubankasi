@@ -35,7 +35,7 @@ namespace sorubankasi
         private void btnKayit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormKayit sistema = new FormKayit(false);
+            formsoruekleme sistema = new formsoruekleme(false);
             sistema.ShowDialog();
             this.Close();
         }

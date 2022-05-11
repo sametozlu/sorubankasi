@@ -10,3 +10,4 @@ C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubank
 C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.csproj.CoreCompileInputs.cache
 C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.exe
 C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.pdb
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formsoruekleme.resources

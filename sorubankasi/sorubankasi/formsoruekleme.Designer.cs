@@ -33,7 +33,6 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtgorselurl = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtcevapyanlis1 = new System.Windows.Forms.TextBox();
             this.txtcevapyanlis2 = new System.Windows.Forms.TextBox();
             this.txtcevapyanlis3 = new System.Windows.Forms.TextBox();
@@ -43,15 +42,19 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnsoruekle = new System.Windows.Forms.Button();
             this.btngeri = new System.Windows.Forms.Button();
+            this.txtrue = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cmbKonu
             // 
+            this.cmbKonu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cmbKonu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbKonu.FormattingEnabled = true;
-            this.cmbKonu.Location = new System.Drawing.Point(145, 47);
+            this.cmbKonu.Location = new System.Drawing.Point(158, 47);
             this.cmbKonu.Name = "cmbKonu";
             this.cmbKonu.Size = new System.Drawing.Size(308, 24);
             this.cmbKonu.TabIndex = 0;
+            this.cmbKonu.SelectedIndexChanged += new System.EventHandler(this.cmbKonu_SelectedIndexChanged);
             // 
             // ckGorsel
             // 
@@ -66,7 +69,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(61, 85);
+            this.richTextBox1.Location = new System.Drawing.Point(74, 85);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(392, 96);
             this.richTextBox1.TabIndex = 2;
@@ -83,35 +86,29 @@
             // 
             // txtgorselurl
             // 
-            this.txtgorselurl.Location = new System.Drawing.Point(242, 186);
+            this.txtgorselurl.Location = new System.Drawing.Point(255, 186);
             this.txtgorselurl.Name = "txtgorselurl";
             this.txtgorselurl.Size = new System.Drawing.Size(211, 22);
             this.txtgorselurl.TabIndex = 4;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(145, 216);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(308, 22);
-            this.textBox1.TabIndex = 5;
+            this.txtgorselurl.Visible = false;
             // 
             // txtcevapyanlis1
             // 
-            this.txtcevapyanlis1.Location = new System.Drawing.Point(145, 252);
+            this.txtcevapyanlis1.Location = new System.Drawing.Point(158, 252);
             this.txtcevapyanlis1.Name = "txtcevapyanlis1";
             this.txtcevapyanlis1.Size = new System.Drawing.Size(308, 22);
             this.txtcevapyanlis1.TabIndex = 6;
             // 
             // txtcevapyanlis2
             // 
-            this.txtcevapyanlis2.Location = new System.Drawing.Point(145, 293);
+            this.txtcevapyanlis2.Location = new System.Drawing.Point(158, 293);
             this.txtcevapyanlis2.Name = "txtcevapyanlis2";
             this.txtcevapyanlis2.Size = new System.Drawing.Size(308, 22);
             this.txtcevapyanlis2.TabIndex = 7;
             // 
             // txtcevapyanlis3
             // 
-            this.txtcevapyanlis3.Location = new System.Drawing.Point(145, 335);
+            this.txtcevapyanlis3.Location = new System.Drawing.Point(158, 335);
             this.txtcevapyanlis3.Name = "txtcevapyanlis3";
             this.txtcevapyanlis3.Size = new System.Drawing.Size(308, 22);
             this.txtcevapyanlis3.TabIndex = 8;
@@ -156,7 +153,7 @@
             // 
             this.btnsoruekle.Location = new System.Drawing.Point(61, 381);
             this.btnsoruekle.Name = "btnsoruekle";
-            this.btnsoruekle.Size = new System.Drawing.Size(392, 55);
+            this.btnsoruekle.Size = new System.Drawing.Size(405, 55);
             this.btnsoruekle.TabIndex = 13;
             this.btnsoruekle.Text = "Soru Ekle";
             this.btnsoruekle.UseVisualStyleBackColor = true;
@@ -172,11 +169,19 @@
             this.btngeri.UseVisualStyleBackColor = true;
             this.btngeri.Click += new System.EventHandler(this.btngeri_Click);
             // 
+            // txtrue
+            // 
+            this.txtrue.Location = new System.Drawing.Point(158, 216);
+            this.txtrue.Name = "txtrue";
+            this.txtrue.Size = new System.Drawing.Size(308, 22);
+            this.txtrue.TabIndex = 15;
+            // 
             // formsoruekleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(498, 505);
+            this.Controls.Add(this.txtrue);
             this.Controls.Add(this.btngeri);
             this.Controls.Add(this.btnsoruekle);
             this.Controls.Add(this.label5);
@@ -186,7 +191,6 @@
             this.Controls.Add(this.txtcevapyanlis3);
             this.Controls.Add(this.txtcevapyanlis2);
             this.Controls.Add(this.txtcevapyanlis1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtgorselurl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox1);
@@ -194,6 +198,7 @@
             this.Controls.Add(this.cmbKonu);
             this.Name = "formsoruekleme";
             this.Text = "Soru Ekleme";
+            this.Load += new System.EventHandler(this.formsoruekleme_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,7 +211,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtgorselurl;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtcevapyanlis1;
         private System.Windows.Forms.TextBox txtcevapyanlis2;
         private System.Windows.Forms.TextBox txtcevapyanlis3;
@@ -216,5 +220,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnsoruekle;
         private System.Windows.Forms.Button btngeri;
+        private System.Windows.Forms.TextBox txtrue;
     }
 }
