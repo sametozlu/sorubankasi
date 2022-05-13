@@ -68,7 +68,7 @@
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(210, 37);
             this.btnNext.TabIndex = 4;
-            this.btnNext.Text = "button1";
+            this.btnNext.Text = "Sonraki";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 

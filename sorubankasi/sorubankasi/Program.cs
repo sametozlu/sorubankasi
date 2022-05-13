@@ -16,8 +16,7 @@ namespace sorubankasi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fromstudent(0));
-            //Application.Run(new formsoruekleme(false));
+            Application.Run(new Form1());
         }
     }
 }

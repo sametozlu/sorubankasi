@@ -58,6 +58,12 @@
     <Compile Include="formadminmain.Designer.cs">
       <DependentUpon>formadminmain.cs</DependentUpon>
     </Compile>
+    <Compile Include="formforgotpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formforgotpass.Designer.cs">
+      <DependentUpon>formforgotpass.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formadminmain.resx">
       <DependentUpon>formadminmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formforgotpass.resx">
+      <DependentUpon>formforgotpass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKayit.resx">
       <DependentUpon>FormKayit.cs</DependentUpon>

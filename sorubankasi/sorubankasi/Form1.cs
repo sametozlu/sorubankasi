@@ -97,5 +97,13 @@ namespace sorubankasi
                    }
             }
         }
+
+        private void btnforgot_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formforgotpass sistema = new formforgotpass();
+            sistema.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -90,6 +90,7 @@
             this.btnforgot.TabIndex = 14;
             this.btnforgot.Text = "Şifremi Unuttum";
             this.btnforgot.UseVisualStyleBackColor = true;
+            this.btnforgot.Click += new System.EventHandler(this.btnforgot_Click);
             // 
             // btnKayit
             // 
