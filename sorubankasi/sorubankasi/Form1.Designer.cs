@@ -105,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 319);
+            this.ClientSize = new System.Drawing.Size(383, 337);
             this.Controls.Add(this.btnKayit);
             this.Controls.Add(this.btnforgot);
             this.Controls.Add(this.txtpassword);
@@ -114,7 +114,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGiris);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Giriş";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

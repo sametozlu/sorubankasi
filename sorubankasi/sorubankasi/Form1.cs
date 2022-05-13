@@ -79,7 +79,7 @@ namespace sorubankasi
                                 this.Close();
                                 break;
                             case 3:
-                                formogrencimain sistemax = new formogrencimain(Convert.ToInt16(dr[0].ToString()));
+                                fromstudent sistemax = new fromstudent(Convert.ToInt16(dr[0].ToString()));
                                 sistemax.ShowDialog();
                                 this.Close();
                                 break;

@@ -13,3 +13,5 @@ C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubank
 C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formsoruekleme.resources
 C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formadminmain.resources
 C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formogretmenmain.resources
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formogrencimain.resources
+C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.fromstudent.resources
