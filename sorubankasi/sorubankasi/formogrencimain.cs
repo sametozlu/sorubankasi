@@ -1,7 +1,9 @@
-﻿using System;
+﻿using BoruSankasi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,10 @@ namespace sorubankasi
 {
     public partial class formogrencimain : Form
     {
+
+        SqlDataReader dr;
+        List<questions> quests = new List<questions>();
+
         bool extended = false;
         private int counter = 10;
         DateTime dt = new DateTime();
@@ -27,13 +33,58 @@ namespace sorubankasi
 
         private void formogrencimain_Load(object sender, EventArgs e)
         {
-            pictureBox1.Load("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");
-            int counter = 10;
+
+            using (SqlConnection con = new SqlConnection(SQLConnect.ConnectionString))
+            {
+
+                StringBuilder sb = new StringBuilder();
+                sb.Append("Select * from questions;");
+                using (SqlCommand cmd = new SqlCommand(sb.ToString(), con))
+                {
+                    con.Open();
+
+                    dr = cmd.ExecuteReader();
+                    try
+                    {
+                        while (dr.Read())
+                        {
+                            questions q = new questions();
+                            q.id = Convert.ToInt16( dr[0].ToString());
+                            q.question = dr[1].ToString();
+                            q.trueanswer = dr[2].ToString();
+                            q.fa1 = dr[3].ToString();
+                            q.fa2 = dr[4].ToString();
+                            q.fa3 = dr[5].ToString();
+                            q.url = dr[6].ToString();
+                            q.subjectid = Convert.ToInt16(dr[7].ToString());
+                            quests.Add(q);
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Konu başlıkları listelenemdi");
+
+                    }
+                }
+            }
+
+
+
             timer1 = new System.Windows.Forms.Timer();
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Interval = 1000;
             timer1.Start();
             lblLeft.Text = "";
+        }
+         
+        private void callquestion()
+        {
+
+            pictureBox1.Load("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");
+
+
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
