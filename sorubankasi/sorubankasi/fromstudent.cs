@@ -108,6 +108,10 @@ namespace sorubankasi
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            formogrencimain sistemax = new formogrencimain(0);
+            sistemax.ShowDialog();
+            this.Close();
 
         }
     }

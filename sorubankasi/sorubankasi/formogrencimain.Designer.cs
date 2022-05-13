@@ -30,18 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.grpCevaplar = new System.Windows.Forms.GroupBox();
-            this.rdA = new System.Windows.Forms.RadioButton();
-            this.rdB = new System.Windows.Forms.RadioButton();
-            this.rdC = new System.Windows.Forms.RadioButton();
-            this.rdD = new System.Windows.Forms.RadioButton();
             this.btnNext = new System.Windows.Forms.Button();
+            this.rdD = new System.Windows.Forms.RadioButton();
+            this.rdC = new System.Windows.Forms.RadioButton();
+            this.rdB = new System.Windows.Forms.RadioButton();
+            this.rdA = new System.Windows.Forms.RadioButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lblLeft = new System.Windows.Forms.Label();
             this.grpProgres = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblCurr = new System.Windows.Forms.Label();
             this.grpCevaplar.SuspendLayout();
             this.grpProgres.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -61,38 +62,15 @@
             this.grpCevaplar.TabIndex = 4;
             this.grpCevaplar.TabStop = false;
             // 
-            // rdA
+            // btnNext
             // 
-            this.rdA.AutoSize = true;
-            this.rdA.Location = new System.Drawing.Point(18, 34);
-            this.rdA.Name = "rdA";
-            this.rdA.Size = new System.Drawing.Size(103, 20);
-            this.rdA.TabIndex = 0;
-            this.rdA.TabStop = true;
-            this.rdA.Text = "radioButton1";
-            this.rdA.UseVisualStyleBackColor = true;
-            // 
-            // rdB
-            // 
-            this.rdB.AutoSize = true;
-            this.rdB.Location = new System.Drawing.Point(18, 77);
-            this.rdB.Name = "rdB";
-            this.rdB.Size = new System.Drawing.Size(103, 20);
-            this.rdB.TabIndex = 1;
-            this.rdB.TabStop = true;
-            this.rdB.Text = "radioButton2";
-            this.rdB.UseVisualStyleBackColor = true;
-            // 
-            // rdC
-            // 
-            this.rdC.AutoSize = true;
-            this.rdC.Location = new System.Drawing.Point(18, 117);
-            this.rdC.Name = "rdC";
-            this.rdC.Size = new System.Drawing.Size(103, 20);
-            this.rdC.TabIndex = 2;
-            this.rdC.TabStop = true;
-            this.rdC.Text = "radioButton3";
-            this.rdC.UseVisualStyleBackColor = true;
+            this.btnNext.Location = new System.Drawing.Point(545, 177);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(210, 37);
+            this.btnNext.TabIndex = 4;
+            this.btnNext.Text = "button1";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // rdD
             // 
@@ -105,15 +83,38 @@
             this.rdD.Text = "radioButton4";
             this.rdD.UseVisualStyleBackColor = true;
             // 
-            // btnNext
+            // rdC
             // 
-            this.btnNext.Location = new System.Drawing.Point(545, 181);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(210, 33);
-            this.btnNext.TabIndex = 4;
-            this.btnNext.Text = "button1";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            this.rdC.AutoSize = true;
+            this.rdC.Location = new System.Drawing.Point(18, 117);
+            this.rdC.Name = "rdC";
+            this.rdC.Size = new System.Drawing.Size(103, 20);
+            this.rdC.TabIndex = 2;
+            this.rdC.TabStop = true;
+            this.rdC.Text = "radioButton3";
+            this.rdC.UseVisualStyleBackColor = true;
+            // 
+            // rdB
+            // 
+            this.rdB.AutoSize = true;
+            this.rdB.Location = new System.Drawing.Point(18, 77);
+            this.rdB.Name = "rdB";
+            this.rdB.Size = new System.Drawing.Size(103, 20);
+            this.rdB.TabIndex = 1;
+            this.rdB.TabStop = true;
+            this.rdB.Text = "radioButton2";
+            this.rdB.UseVisualStyleBackColor = true;
+            // 
+            // rdA
+            // 
+            this.rdA.AutoSize = true;
+            this.rdA.Location = new System.Drawing.Point(18, 34);
+            this.rdA.Name = "rdA";
+            this.rdA.Size = new System.Drawing.Size(103, 20);
+            this.rdA.TabIndex = 0;
+            this.rdA.TabStop = true;
+            this.rdA.Text = "radioButton1";
+            this.rdA.UseVisualStyleBackColor = true;
             // 
             // timer1
             // 
@@ -133,7 +134,7 @@
             // lblLeft
             // 
             this.lblLeft.AutoSize = true;
-            this.lblLeft.Location = new System.Drawing.Point(358, 18);
+            this.lblLeft.Location = new System.Drawing.Point(328, 17);
             this.lblLeft.Name = "lblLeft";
             this.lblLeft.Size = new System.Drawing.Size(44, 16);
             this.lblLeft.TabIndex = 6;
@@ -159,6 +160,14 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(18, 21);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(348, 147);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(389, 21);
@@ -168,19 +177,21 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // richTextBox1
+            // lblCurr
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(18, 21);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(348, 147);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.lblCurr.AutoSize = true;
+            this.lblCurr.Location = new System.Drawing.Point(14, 9);
+            this.lblCurr.Name = "lblCurr";
+            this.lblCurr.Size = new System.Drawing.Size(44, 16);
+            this.lblCurr.TabIndex = 7;
+            this.lblCurr.Text = "label1";
             // 
             // formogrencimain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 507);
+            this.ClientSize = new System.Drawing.Size(800, 518);
+            this.Controls.Add(this.lblCurr);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpProgres);
             this.Controls.Add(this.grpCevaplar);
@@ -194,6 +205,7 @@
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -212,5 +224,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label lblCurr;
     }
 }
