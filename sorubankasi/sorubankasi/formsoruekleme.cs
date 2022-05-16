@@ -149,11 +149,8 @@ namespace sorubankasi
             }
             catch (Exception)
             {
-
                 throw;
             }
-
-
         }
 
         private void cmbKonu_SelectedIndexChanged(object sender, EventArgs e)

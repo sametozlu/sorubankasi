@@ -8,7 +8,7 @@ namespace BoruSankasi
 {
     public class SQLConnect
     {
-        public static readonly String ConnectionString= "server=localhost\\SQLEXPRESS; Initial Catalog=SoruBankasi;Integrated Security=SSPI;MultipleActiveResultSets=true;";
 
+        public static readonly String ConnectionString = "Data Source=DESKTOP-MES942P;Initial Catalog=sorubankasi;Integrated Security=True";
     }
 }

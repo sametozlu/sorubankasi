@@ -21,7 +21,7 @@ namespace sorubankasi
         List<questions> quests = new List<questions>();
         int curr = 0;
         bool extended = false;
-        private int counter = 10;
+        private int counter = 100;
         DateTime dt = new DateTime();
         public formogrencimain(int ogrenciid)
         {

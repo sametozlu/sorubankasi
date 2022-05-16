@@ -98,6 +98,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="questAnswers.cs" />
     <Compile Include="question.cs" />
+    <Compile Include="sorubankasiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sorubankasiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sorubankasiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sorubankasiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sorubankasiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sorubankasiDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SQLConnect.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -141,6 +156,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="sorubankasiDataSet.xsc">
+      <DependentUpon>sorubankasiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sorubankasiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sorubankasiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sorubankasiDataSet.xss">
+      <DependentUpon>sorubankasiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sorubankasiDataSet1.xsc">
+      <DependentUpon>sorubankasiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sorubankasiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sorubankasiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sorubankasiDataSet1.xss">
+      <DependentUpon>sorubankasiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sorubankasiDataSet2.xsc">
+      <DependentUpon>sorubankasiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sorubankasiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sorubankasiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sorubankasiDataSet2.xss">
+      <DependentUpon>sorubankasiDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

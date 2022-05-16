@@ -46,56 +46,55 @@ namespace sorubankasi
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(SQLConnect.ConnectionString))
+            SqlConnection con = new SqlConnection(SQLConnect.ConnectionString);
+            
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Select * from login WHERE username = @username AND password = @password ");
+
+            using (SqlCommand cmd = new SqlCommand(sb.ToString(), con))
             {
 
-                StringBuilder sb = new StringBuilder();
-                sb.Append("Select * from login WHERE username = @username AND password = @password ;");
+                cmd.Parameters.AddWithValue("@username", txtusername.Text);
+                cmd.Parameters.AddWithValue("@password", txtpassword.Text);
+                con.Open();
 
-                using (SqlCommand cmd = new SqlCommand(sb.ToString(), con))
+                dr = cmd.ExecuteReader();
+                
+                while (dr.Read())
                 {
-
-                    cmd.Parameters.AddWithValue("@username", txtusername.Text);
-                    cmd.Parameters.AddWithValue("@password", txtpassword.Text);
-                    con.Open();
-
-                    dr = cmd.ExecuteReader();
-                    if(dr.Read())
+                    int usertype = Convert.ToInt16(dr[5].ToString());
+                    MessageBox.Show("usertype:"+usertype);
+                    this.Hide();
+                    if (usertype == 1)
                     {
-                        int usertype = Convert.ToInt16(dr[5].ToString());
-                        this.Hide();
-                      
-                        switch (usertype)
-                        {
-                            case 1:
-                                formadminmain admind = new formadminmain();
-                                admind.ShowDialog();
-                                this.Close();
-                                break;
+                        formadminmain admind = new formadminmain();
+                        MessageBox.Show("frmadminId olustu");
+                        admind.Show();
+                        MessageBox.Show("frmadminId cağırıldı");
 
-                            case 2:
-                                formogretmenmain sistemaxz = new formogretmenmain();
-                                sistemaxz.ShowDialog();
-                                this.Close();
-                                break;
-                            case 3:
-                                fromstudent sistemax = new fromstudent(Convert.ToInt16(dr[0].ToString()));
-                                sistemax.ShowDialog();
-                                this.Close();
-                                break;
-                            default:
-                                break;
-
-                        }
-
+                       // this.Close();
                     }
-                    else
+                    if (usertype == 2)
                     {
-                        MessageBox.Show("Giriş Hatası");
-
+                        formogretmenmain sistemaxz = new formogretmenmain();
+                        sistemaxz.ShowDialog();
+                        //this.Close();
                     }
-                   }
+                    if (usertype == 3)
+                    {
+                        fromstudent sistemax = new fromstudent(Convert.ToInt16(dr[0].ToString()));
+                        sistemax.ShowDialog();
+                      //  this.Close();
+                    }
+                }
+                //else
+                //{
+                //    MessageBox.Show("Giriş Hatası");
+
+                //}
             }
+
         }
 
         private void btnforgot_Click(object sender, EventArgs e)
