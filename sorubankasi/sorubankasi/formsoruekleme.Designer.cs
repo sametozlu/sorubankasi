@@ -59,9 +59,11 @@
             // ckGorsel
             // 
             this.ckGorsel.AutoSize = true;
-            this.ckGorsel.Location = new System.Drawing.Point(61, 187);
+            this.ckGorsel.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ckGorsel.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.ckGorsel.Location = new System.Drawing.Point(52, 187);
             this.ckGorsel.Name = "ckGorsel";
-            this.ckGorsel.Size = new System.Drawing.Size(175, 20);
+            this.ckGorsel.Size = new System.Drawing.Size(205, 23);
             this.ckGorsel.TabIndex = 1;
             this.ckGorsel.Text = "Soru Görsel İçeriyor mu?";
             this.ckGorsel.UseVisualStyleBackColor = true;
@@ -78,9 +80,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label1.Location = new System.Drawing.Point(58, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 16);
+            this.label1.Size = new System.Drawing.Size(88, 19);
             this.label1.TabIndex = 3;
             this.label1.Text = "Konu Başlığı";
             // 
@@ -116,41 +120,51 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label2.Location = new System.Drawing.Point(58, 219);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 16);
+            this.label2.Size = new System.Drawing.Size(92, 19);
             this.label2.TabIndex = 9;
             this.label2.Text = "Doğru Cevap";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label3.Location = new System.Drawing.Point(58, 254);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 16);
+            this.label3.Size = new System.Drawing.Size(93, 19);
             this.label3.TabIndex = 10;
             this.label3.Text = "Yanlış Cevap";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label4.Location = new System.Drawing.Point(58, 295);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 16);
+            this.label4.Size = new System.Drawing.Size(93, 19);
             this.label4.TabIndex = 11;
             this.label4.Text = "Yanlış Cevap";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label5.Location = new System.Drawing.Point(58, 338);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 16);
+            this.label5.Size = new System.Drawing.Size(93, 19);
             this.label5.TabIndex = 12;
             this.label5.Text = "Yanlış Cevap";
             // 
             // btnsoruekle
             // 
+            this.btnsoruekle.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
+            this.btnsoruekle.ForeColor = System.Drawing.Color.MidnightBlue;
             this.btnsoruekle.Location = new System.Drawing.Point(61, 381);
             this.btnsoruekle.Name = "btnsoruekle";
             this.btnsoruekle.Size = new System.Drawing.Size(405, 55);
@@ -161,9 +175,11 @@
             // 
             // btngeri
             // 
-            this.btngeri.Location = new System.Drawing.Point(12, 468);
+            this.btngeri.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
+            this.btngeri.ForeColor = System.Drawing.Color.Navy;
+            this.btngeri.Location = new System.Drawing.Point(12, 460);
             this.btngeri.Name = "btngeri";
-            this.btngeri.Size = new System.Drawing.Size(75, 25);
+            this.btngeri.Size = new System.Drawing.Size(75, 33);
             this.btngeri.TabIndex = 14;
             this.btngeri.Text = "Geri";
             this.btngeri.UseVisualStyleBackColor = true;
@@ -180,6 +196,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(498, 505);
             this.Controls.Add(this.txtrue);
             this.Controls.Add(this.btngeri);

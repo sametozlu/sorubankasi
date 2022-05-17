@@ -21,7 +21,7 @@ namespace sorubankasi
         List<questions> quests = new List<questions>();
         int curr = 0;
         bool extended = false;
-        private int counter = 100;
+        private int counter = 600;
         DateTime dt = new DateTime();
         public formogrencimain(int ogrenciid)
         {
@@ -288,6 +288,11 @@ namespace sorubankasi
                    MessageBox.Show("Bitti");
             }
             
+        }
+
+        private void grpCevaplar_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

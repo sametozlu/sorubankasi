@@ -47,17 +47,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(12, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 16);
+            this.label1.Size = new System.Drawing.Size(122, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Yeni Konu Başlığı";
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(277, 69);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 23);
+            this.button1.Size = new System.Drawing.Size(86, 36);
             this.button1.TabIndex = 2;
             this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
@@ -65,6 +67,7 @@
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(15, 254);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(348, 37);
@@ -75,24 +78,27 @@
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
+            this.listBox1.ItemHeight = 19;
             this.listBox1.Location = new System.Drawing.Point(15, 133);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(348, 100);
+            this.listBox1.Size = new System.Drawing.Size(348, 99);
             this.listBox1.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(12, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 16);
+            this.label2.Size = new System.Drawing.Size(150, 19);
             this.label2.TabIndex = 5;
             this.label2.Text = "Aktif Konu Başlıkları";
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
             this.button3.Location = new System.Drawing.Point(15, 313);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(348, 37);
@@ -105,6 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(398, 380);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);

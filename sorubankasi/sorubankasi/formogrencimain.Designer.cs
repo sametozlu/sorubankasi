@@ -61,23 +61,29 @@
             this.grpCevaplar.Size = new System.Drawing.Size(761, 220);
             this.grpCevaplar.TabIndex = 4;
             this.grpCevaplar.TabStop = false;
+            this.grpCevaplar.Enter += new System.EventHandler(this.grpCevaplar_Enter);
             // 
             // btnNext
             // 
+            this.btnNext.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnNext.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnNext.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnNext.Location = new System.Drawing.Point(545, 177);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(210, 37);
             this.btnNext.TabIndex = 4;
             this.btnNext.Text = "Sonraki";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // rdD
             // 
             this.rdD.AutoSize = true;
+            this.rdD.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rdD.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.rdD.Location = new System.Drawing.Point(18, 154);
             this.rdD.Name = "rdD";
-            this.rdD.Size = new System.Drawing.Size(103, 20);
+            this.rdD.Size = new System.Drawing.Size(117, 23);
             this.rdD.TabIndex = 3;
             this.rdD.TabStop = true;
             this.rdD.Text = "radioButton4";
@@ -86,9 +92,11 @@
             // rdC
             // 
             this.rdC.AutoSize = true;
+            this.rdC.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rdC.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.rdC.Location = new System.Drawing.Point(18, 117);
             this.rdC.Name = "rdC";
-            this.rdC.Size = new System.Drawing.Size(103, 20);
+            this.rdC.Size = new System.Drawing.Size(117, 23);
             this.rdC.TabIndex = 2;
             this.rdC.TabStop = true;
             this.rdC.Text = "radioButton3";
@@ -97,9 +105,11 @@
             // rdB
             // 
             this.rdB.AutoSize = true;
+            this.rdB.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rdB.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.rdB.Location = new System.Drawing.Point(18, 77);
             this.rdB.Name = "rdB";
-            this.rdB.Size = new System.Drawing.Size(103, 20);
+            this.rdB.Size = new System.Drawing.Size(117, 23);
             this.rdB.TabIndex = 1;
             this.rdB.TabStop = true;
             this.rdB.Text = "radioButton2";
@@ -108,9 +118,11 @@
             // rdA
             // 
             this.rdA.AutoSize = true;
+            this.rdA.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rdA.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.rdA.Location = new System.Drawing.Point(18, 34);
             this.rdA.Name = "rdA";
-            this.rdA.Size = new System.Drawing.Size(103, 20);
+            this.rdA.Size = new System.Drawing.Size(117, 23);
             this.rdA.TabIndex = 0;
             this.rdA.TabStop = true;
             this.rdA.Text = "radioButton1";
@@ -134,9 +146,10 @@
             // lblLeft
             // 
             this.lblLeft.AutoSize = true;
+            this.lblLeft.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblLeft.Location = new System.Drawing.Point(328, 17);
             this.lblLeft.Name = "lblLeft";
-            this.lblLeft.Size = new System.Drawing.Size(44, 16);
+            this.lblLeft.Size = new System.Drawing.Size(50, 19);
             this.lblLeft.TabIndex = 6;
             this.lblLeft.Text = "label1";
             // 
@@ -162,6 +175,9 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.richTextBox1.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.richTextBox1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.richTextBox1.Location = new System.Drawing.Point(18, 21);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(348, 147);
@@ -182,7 +198,7 @@
             this.lblCurr.AutoSize = true;
             this.lblCurr.Location = new System.Drawing.Point(14, 9);
             this.lblCurr.Name = "lblCurr";
-            this.lblCurr.Size = new System.Drawing.Size(44, 16);
+            this.lblCurr.Size = new System.Drawing.Size(46, 17);
             this.lblCurr.TabIndex = 7;
             this.lblCurr.Text = "label1";
             // 
@@ -190,6 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 518);
             this.Controls.Add(this.lblCurr);
             this.Controls.Add(this.groupBox1);

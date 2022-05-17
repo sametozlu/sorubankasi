@@ -36,6 +36,8 @@
             // 
             // btnNext
             // 
+            this.btnNext.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
+            this.btnNext.ForeColor = System.Drawing.Color.Coral;
             this.btnNext.Location = new System.Drawing.Point(12, 136);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(70, 28);
@@ -54,14 +56,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Aquamarine;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Purple;
             this.label1.Location = new System.Drawing.Point(125, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 16);
+            this.label1.Size = new System.Drawing.Size(239, 19);
             this.label1.TabIndex = 17;
             this.label1.Text = "Lütfen Kurtarma Kodunuzu Giriniz";
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.Coral;
             this.button1.Location = new System.Drawing.Point(161, 99);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 28);
@@ -74,6 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(479, 176);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);

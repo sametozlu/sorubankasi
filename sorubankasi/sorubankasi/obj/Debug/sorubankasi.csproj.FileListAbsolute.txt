@@ -16,20 +16,20 @@ C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubank
 C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formogrencimain.resources
 C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.fromstudent.resources
 C:\Users\bilal\Desktop\c#\sorubankasi\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formforgotpass.resources
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\bin\Debug\sorubankasi.exe.config
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\bin\Debug\sorubankasi.exe
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\bin\Debug\sorubankasi.pdb
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.csproj.AssemblyReference.cache
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.Form1.resources
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formadminmain.resources
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formforgotpass.resources
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.FormKayit.resources
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formogrencimain.resources
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formogretmenmain.resources
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formsoruekleme.resources
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.fromstudent.resources
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.Properties.Resources.resources
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.csproj.GenerateResource.cache
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.csproj.CoreCompileInputs.cache
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.exe
-C:\Users\TR-HALOMAN06\Desktop\yazılım yapımı proje\sorubankasi\sorubankasi\obj\Debug\sorubankasi.pdb
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\bin\Debug\sorubankasi.exe.config
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\bin\Debug\sorubankasi.exe
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\bin\Debug\sorubankasi.pdb
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.csproj.AssemblyReference.cache
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.Form1.resources
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formadminmain.resources
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formforgotpass.resources
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.FormKayit.resources
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formogrencimain.resources
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formogretmenmain.resources
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.formsoruekleme.resources
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.fromstudent.resources
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.Properties.Resources.resources
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.csproj.GenerateResource.cache
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.csproj.CoreCompileInputs.cache
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.exe
+C:\Users\TR-HALOMAN06\Desktop\gerçek\sorubankasi\sorubankasi\obj\Debug\sorubankasi.pdb

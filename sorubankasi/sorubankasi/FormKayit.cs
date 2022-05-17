@@ -62,12 +62,12 @@ namespace sorubankasi
                 }
 
                 var finalString = new String(stringChars);
-                
                 cmd.CommandText = "INSERT INTO login (username,password,hiddenkey,namesurname,type) VALUES('" + txtusername.Text + "'," + "'" + txtpassword.Text + "'," + "'" + finalString + "','" + txtname.Text + "'," + selectedusertype.ToString() + ")";
                 dr = cmd.ExecuteReader();
+
                 MessageBox.Show("Tebrikler! Başarılı bir şekilde kayıt oluşturuldu. Kurtarma şifresi "+finalString);
-                 this.Hide();
-                //    frmTeacherMain frmNew = new frmTeacherMain();
+                // this.Hide();
+                //     frmTeacherMain frmNew = new frmTeacherMain();
                 //     frmNew.ShowDialog();
                 //   this.Close();
             }

@@ -47,7 +47,7 @@ namespace sorubankasi
         private void btnGiris_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(SQLConnect.ConnectionString);
-            
+
 
             StringBuilder sb = new StringBuilder();
             sb.Append("Select * from login WHERE username = @username AND password = @password ");
@@ -60,11 +60,11 @@ namespace sorubankasi
                 con.Open();
 
                 dr = cmd.ExecuteReader();
-                
+
                 while (dr.Read())
                 {
                     int usertype = Convert.ToInt16(dr[5].ToString());
-                    MessageBox.Show("usertype:"+usertype);
+                    MessageBox.Show("usertype:" + usertype);
                     this.Hide();
                     if (usertype == 1)
                     {
@@ -73,7 +73,7 @@ namespace sorubankasi
                         admind.Show();
                         MessageBox.Show("frmadminId cağırıldı");
 
-                       // this.Close();
+                        // this.Close();
                     }
                     if (usertype == 2)
                     {
@@ -85,7 +85,7 @@ namespace sorubankasi
                     {
                         fromstudent sistemax = new fromstudent(Convert.ToInt16(dr[0].ToString()));
                         sistemax.ShowDialog();
-                      //  this.Close();
+                        //  this.Close();
                     }
                 }
                 //else
